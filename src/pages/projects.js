@@ -4,9 +4,9 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import Helmet from 'react-helmet';
 
-import Card from '../components/Card/Card';
-import Layout from "../components/layout"
-import SEO from "../components/seo";
+import Card from 'components/Card/Card';
+import Layout from "components/layout"
+import SEO from "components/seo";
 
 export const queryImage = graphql`
 query {
@@ -37,6 +37,30 @@ const Projects = ({ data }) => (
         <div className="columns">
             <div className="column is-half is-offset-one-quarter">
             <Card 
+                title={"Gitcompare"}
+                subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
+                link={"https://github.com/Seveshy/gitcompare"}
+                tags={["create-react-app", "axios", "styled-components", "MomentJS", "font-awesome"]}
+                image={<Img fixed={data.propject1.childImageSharp.fixed} />}
+                />
+
+                <Card 
+                title={"Gitcompare"}
+                subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
+                link={"https://github.com/Seveshy/gitcompare"}
+                tags={["create-react-app", "axios", "styled-components", "MomentJS", "font-awesome"]}
+                image={<Img fixed={data.propject1.childImageSharp.fixed} />}
+                />
+
+                <Card 
+                title={"Gitcompare"}
+                subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
+                link={"https://github.com/Seveshy/gitcompare"}
+                tags={["create-react-app", "axios", "styled-components", "MomentJS", "font-awesome"]}
+                image={<Img fixed={data.propject1.childImageSharp.fixed} />}
+                />
+
+                <Card 
                 title={"Gitcompare"}
                 subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
                 link={"https://github.com/Seveshy/gitcompare"}
