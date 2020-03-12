@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Helmet from 'react-helmet';
 
@@ -22,8 +22,10 @@ query {
 
 const Projects = ({ data }) => (
 <Layout>
-<SEO description="Frontend developer"
-     keywords="React, Sass, Frontend, developer"
+<SEO
+    pageTitle="Projects"
+    description="Frontend developer"
+    keywords="React, Sass, Frontend, developer"
 />
 <Helmet title="Projetos | Daniel Major" />
 
@@ -69,6 +71,11 @@ const Projects = ({ data }) => (
                 />
             </div> 
         </div>
+        <p className="has-text-centered">
+        Check out my
+        {" "}
+            <Link to="/blog">Blog</Link>
+        </p>  
 </section>
 </Layout>
 );

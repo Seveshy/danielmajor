@@ -52,6 +52,9 @@ class Header extends Component {
             <Link 
               className="navbar-item is-size-5"
               to="/projects">Projects</Link>
+            <Link 
+              className="navbar-item is-size-5"
+              to="/blog">Blog</Link>
             </div>
           </div>
         </div>
