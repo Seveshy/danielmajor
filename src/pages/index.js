@@ -2,17 +2,31 @@ import React from "react"
 import { Link } from "gatsby"
 import Helmet from 'react-helmet';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import Photo from '../images/daniel.jpg';
+import Img from 'gatsby-image';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/styles/index.scss";
 
-const IndexPage = () => (
+export const queryImage = graphql`
+query {
+    photo: file(relativePath: { eq: "daniel.jpg" }) {
+        childImageSharp {
+            fixed(width: 128, height: 128) {
+                ...GatsbyImageSharpFixed
+            }
+        }
+    }
+}
+`;
+
+const IndexPage = ({ data }) => (
 <Layout>
 <SEO title="Home" />
-<figure className="image is-128x128 photo">
-    <img className="is-rounded" src={Photo} alt="Daniel Major" />
-</figure>
+    <div class="photo">
+        <figure className="image is-128x128 photo">
+            <Img fixed={data.photo.childImageSharp.fixed} />
+        </figure>
+    </div>
 <Helmet title="Daniel Major" />
     <h1 className="title has-text-centered">Daniel Major</h1> 
     <h3 className="subtitle has-text-centered">Frontend Developer. </h3> 
