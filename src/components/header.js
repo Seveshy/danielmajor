@@ -30,10 +30,6 @@ class Header extends Component {
           <Link className="navbar-item is-size-4" to="/">
             {siteTitle}
           </Link>
-          <h1 className="navbar-item is-size-5">
-            {siteTitle}
-          </h1>
-  
           <a className={`navbar-burger ${burgerClass}`} 
               role="button"
               arial-label="menu"
