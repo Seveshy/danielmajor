@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import Helmet from 'react-helmet';
 
@@ -60,10 +60,13 @@ const Blog = ({ data }) => (
                 tags={["create-react-app", "axios", "styled-components", "MomentJS", "font-awesome"]}
                 image={<Img fixed={data.post1.childImageSharp.fixed} />}
                 />
-
-              
             </div> 
         </div>
+        <p className="has-text-centered">
+        Check out my
+        {" "}
+            <Link to="/stack">Stack</Link>
+        </p>  
        
 </section>
 </Layout>
