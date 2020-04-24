@@ -17,8 +17,8 @@ const Card = ({
                 {image}
             </div>
             <div className="media-content">
-                <p className="title is-size-5-desktop is-size-6-touch">{title}</p>
-                <p className="subtitle is-5-desktop is-size-6-touch">{subtitle}</p>
+                <p className="title is-size-5-desktop is-size-6-touch has-text-light">{title}</p>
+                <p className="subtitle is-5-desktop is-size-6-touch has-text-light">{subtitle}</p>
                 <div className="tags">
                   {tags.map(tag => (
                     <span className="tag" key={tag}>{tag}</span>

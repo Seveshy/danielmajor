@@ -24,10 +24,10 @@ class Header extends Component {
     const burgerClass = isMenuOpen ? 'is-active' : '';
     
     return (
-      <nav className="navbar">
+      <nav className="navbar has-background-black-ter">
       <div className="container">
         <div className="navbar-brand">
-          <Link className="navbar-item is-size-4" to="/">
+          <Link className="navbar-item is-size-4 has-text-light" to="/">
             {siteTitle}
           </Link>
           <a className={`navbar-burger ${burgerClass}`} 
@@ -41,23 +41,23 @@ class Header extends Component {
           </a>
         </div>
      
-        <div className={`navbar-menu ${burgerClass}`}>
+        <div className={`navbar-menu ${burgerClass} has-background-black-ter`}>
           <div className="navbar-end">
             <Link
-             className="navbar-item is-size-5"
+             className="navbar-item is-size-5 has-text-light has-background-black-ter"
               to="/"
               onClick={this.closeMenu}
             >
               Home</Link>
             <Link 
-              className="navbar-item is-size-5"
-              to="/projects">Projects</Link>
+              className="navbar-item is-size-5 has-text-light has-background-black-ter"
+              to="/projects">Projetos</Link>
             <Link 
-              className="navbar-item is-size-5"
+              className="navbar-item is-size-5 has-text-light has-background-black-ter"
               to="/blog">Blog
               </Link>
               <Link 
-              className="navbar-item is-size-5"
+              className="navbar-item is-size-5 has-text-light has-background-black-ter"
               to="/stack">Stack
               </Link>
             </div>

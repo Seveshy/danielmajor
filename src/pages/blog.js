@@ -32,13 +32,14 @@ const Blog = ({ data }) => (
 <Helmet title="Projetos | Daniel Major" />
 
 <section className="section is-size-4-desktop is-size-5-touch">
-    <h1 className="title has-text-centered">Blog</h1>
+    <h1 className="title has-text-centered has-text-light">Blog</h1>
         <hr />
         <p className="has-text-centered">
           Follow me on
           {' '}
           <a href="https://twitter.com/Seveshy1">
             Twitter
+            
           {' '}
           </a>
           to read more topics of tech

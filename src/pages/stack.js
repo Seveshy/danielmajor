@@ -16,7 +16,7 @@ const Stack = () => (
 </Helmet>
 
 <section className="section is-size-4-desktop is-size-5-touch">
-    <h1 className="title has-text-centered">Stack</h1>
+    <h1 className="title has-text-centered has-text-light">Stack</h1>
         <hr />
           <div className="has-text-centered">
           <p className="content">
@@ -26,7 +26,7 @@ const Stack = () => (
           <p className="content"> Here is my stack on StackShare: </p>
             <div className="columns is-centered"> 
               <div className="column is-half">
-                <a frameborder="0" data-theme="light" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/18109910a51b99b5c1a9f82399277f">
+                <a frameborder="0" data-theme="dark" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/18109910a51b99b5c1a9f82399277f">
                   Stacksare
                 </a>
               </div>

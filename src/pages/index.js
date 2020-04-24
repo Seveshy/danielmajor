@@ -9,7 +9,7 @@ import "../components/styles/index.scss";
 
 export const queryImage = graphql`
 query {
-    photo: file(relativePath: { eq: "daniel.jpg" }) {
+    photo: file(relativePath: { eq: "daniel.png" }) {
         childImageSharp {
             fixed(width: 128, height: 128) {
                 ...GatsbyImageSharpFixed
@@ -28,8 +28,8 @@ const IndexPage = ({ data }) => (
         </figure>
     </div>
 <Helmet title="Daniel Major" />
-    <h1 className="title has-text-centered">Daniel Major</h1> 
-    <h3 className="subtitle has-text-centered">Frontend Developer. </h3> 
+    <h1 className="title has-text-centered has-text-light">Daniel Major</h1> 
+    <h3 className="subtitle-job has-text-centered">Frontend Developer</h3> 
     <div className="has-text-centered">
         <a href="https://github.com/Seveshy">
             <span className="icon is-large">
@@ -48,13 +48,15 @@ const IndexPage = ({ data }) => (
         </a>
     </div>
     <section className="section content is-size-4-desktop is-size-5-touch">
-        <h4 className="title">Olá eu sou o Daniel</h4>
-            <p>Vivência de 01 ano com desenvolvimento web, atuando em projetos, e aplicando manutenção em sistemas.
-        Experiência com desenvolvimento em equipe, e metodologias ágeis.</p>
+        <h4 className="title has-text-light">Olá eu sou o Daniel</h4>
+            <p>No momento estou no penúltimo semestre do curso de Ciências da Computação.</p>
+            <p> Estou a um ano e meio atuando com desenvolvimento web, com foco em frontend, e na maiorias das vezes com as melhores tecnologias do mercado, como Reactjs e Nodejs. </p>
+            <p> Estou sempre aberto a novos desafios e solucionar problemas. </p>
+        
         <p>
         Check out my
         {" "}
-            <Link to="/projects">Projects</Link>
+            <Link to="/projects">Projetos</Link>
         </p>    
     </section>
 </Layout>

@@ -30,15 +30,16 @@ const Projects = ({ data }) => (
 <Helmet title="Projetos | Daniel Major" />
 
 <section className="section is-size-4-desktop is-size-5-touch">
-    <h1 className="title has-text-centered">Projects</h1>
+    <h1 className="title has-text-centered has-text-light">Projetos</h1>
+    <hr />
     <p className="has-text-centered">
         Some of my projects, see more on My
         {' '}
         <a href="https://github.com/seveshy">Github</a>
     </p>
         <div className="columns">
-            <div className="column is-half is-offset-one-quarter">
-            <Card 
+            <div className="column is-half is-offset-one-quarter ">
+                <Card
                 title={"Gitcompare"}
                 subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
                 link={"https://github.com/Seveshy/gitcompare"}
@@ -46,7 +47,7 @@ const Projects = ({ data }) => (
                 image={<Img fixed={data.propject1.childImageSharp.fixed} />}
                 />
 
-                <Card 
+                <Card
                 title={"Gitcompare"}
                 subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
                 link={"https://github.com/Seveshy/gitcompare"}
@@ -54,7 +55,7 @@ const Projects = ({ data }) => (
                 image={<Img fixed={data.propject1.childImageSharp.fixed} />}
                 />
 
-                <Card 
+                <Card
                 title={"Gitcompare"}
                 subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
                 link={"https://github.com/Seveshy/gitcompare"}
@@ -62,7 +63,7 @@ const Projects = ({ data }) => (
                 image={<Img fixed={data.propject1.childImageSharp.fixed} />}
                 />
 
-                <Card 
+                <Card
                 title={"Gitcompare"}
                 subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
                 link={"https://github.com/Seveshy/gitcompare"}
