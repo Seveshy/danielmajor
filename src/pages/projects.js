@@ -10,7 +10,14 @@ import SEO from "components/seo";
 
 export const queryImage = graphql`
 query {
-    propject1: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+    gitcompare: file(relativePath: { eq: "gitcompare.png" }) {
+        childImageSharp {
+            fixed(width: 128, height: 128) {
+                ...GatsbyImageSharpFixed
+            }
+        }
+    },
+    twitter: file(relativePath: { eq: "twitter.png" }) {
         childImageSharp {
             fixed(width: 128, height: 128) {
                 ...GatsbyImageSharpFixed
@@ -18,6 +25,7 @@ query {
         }
     }
 }
+    
 `;
 
 const Projects = ({ data }) => (
@@ -33,47 +41,35 @@ const Projects = ({ data }) => (
     <h1 className="title has-text-centered has-text-light">Projetos</h1>
     <hr />
     <p className="has-text-centered">
-        Some of my projects, see more on My
+        Alguns dos meus projetos, veja mais em
         {' '}
         <a href="https://github.com/seveshy">Github</a>
     </p>
         <div className="columns">
             <div className="column is-half is-offset-one-quarter ">
-                <Card
-                title={"Gitcompare"}
-                subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
-                link={"https://github.com/Seveshy/gitcompare"}
-                tags={["create-react-app", "axios", "styled-components", "MomentJS", "font-awesome"]}
-                image={<Img fixed={data.propject1.childImageSharp.fixed} />}
-                />
+                <a href="https://github.com/Seveshy/gitcompare" target="_blank">
+                    <Card
+                    title={"Gitcompare"}
+                    subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
+                    tags={["create-react-app", "axios", "styled-components", "MomentJS", "font-awesome"]}
+                    image={<Img fixed={data.gitcompare.childImageSharp.fixed} />}
+                    />
+                </a>
 
-                <Card
-                title={"Gitcompare"}
-                subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
-                link={"https://github.com/Seveshy/gitcompare"}
-                tags={["create-react-app", "axios", "styled-components", "MomentJS", "font-awesome"]}
-                image={<Img fixed={data.propject1.childImageSharp.fixed} />}
-                />
-
-                <Card
-                title={"Gitcompare"}
-                subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
-                link={"https://github.com/Seveshy/gitcompare"}
-                tags={["create-react-app", "axios", "styled-components", "MomentJS", "font-awesome"]}
-                image={<Img fixed={data.propject1.childImageSharp.fixed} />}
-                />
-
-                <Card
-                title={"Gitcompare"}
-                subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
-                link={"https://github.com/Seveshy/gitcompare"}
-                tags={["create-react-app", "axios", "styled-components", "MomentJS", "font-awesome"]}
-                image={<Img fixed={data.propject1.childImageSharp.fixed} />}
-                />
+                <a href="https://github.com/Seveshy/twitter" target="_blank">
+                    <Card
+                    title={"Twitter Clone"}
+                    subtitle={"Um clone básico do layout do twitter, desenvolvido com flexbox"}
+                    tags={["HTML", "CSS", "flex-box"]}
+                    image={<Img fixed={data.twitter.childImageSharp.fixed} />}
+                    />
+                </a>
+              
+            
             </div> 
         </div>
         <p className="has-text-centered">
-        Check out my
+         Confira o meu
         {" "}
             <Link to="/blog">Blog</Link>
         </p>  

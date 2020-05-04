@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Helmet from 'react-helmet';
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import Img from 'gatsby-image';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -46,15 +46,20 @@ const IndexPage = ({ data }) => (
                 <FaLinkedin size={32} />
             </span>
         </a>
+        <a href="https://twitter.com/Seveshy1">
+            <span className="icon is-large">
+                <FaTwitter size={32} />
+            </span>
+        </a>
     </div>
     <section className="section content is-size-4-desktop is-size-5-touch">
-        <h4 className="title has-text-light">Olá eu sou o Daniel</h4>
+        <h4 className="title has-text-light">Olá, eu sou o Daniel</h4>
             <p>No momento estou no penúltimo semestre do curso de Ciências da Computação.</p>
             <p> Estou a um ano e meio atuando com desenvolvimento web, com foco em frontend, e na maiorias das vezes com as melhores tecnologias do mercado, como Reactjs e Nodejs. </p>
             <p> Estou sempre aberto a novos desafios e solucionar problemas. </p>
         
         <p>
-        Check out my
+        Confira os meus
         {" "}
             <Link to="/projects">Projetos</Link>
         </p>    

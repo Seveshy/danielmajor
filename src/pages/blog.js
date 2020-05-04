@@ -35,31 +35,23 @@ const Blog = ({ data }) => (
     <h1 className="title has-text-centered has-text-light">Blog</h1>
         <hr />
         <p className="has-text-centered">
-          Follow me on
+          Siga me no
           {' '}
           <a href="https://twitter.com/Seveshy1">
             Twitter
             
           {' '}
           </a>
-          to read more topics of tech
+          para ler mais tópicos de tecnologia
         </p>
         <div className="columns">
             <div className="column is-half is-offset-one-quarter">
             <Card 
-                title={"Gitcompare"}
-                subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
-                link={"https://github.com/Seveshy/gitcompare"}
-                tags={["create-react-app", "axios", "styled-components", "MomentJS", "font-awesome"]}
-                image={<Img fixed={data.post1.childImageSharp.fixed} />}
+                title={"Artigo em andamento"}
                 />
 
             <Card 
-                title={"Gitcompare"}
-                subtitle={"Projeto desenvolvido para estudos no bootcamp da Rocketseat"}
-                link={"https://github.com/Seveshy/gitcompare"}
-                tags={["create-react-app", "axios", "styled-components", "MomentJS", "font-awesome"]}
-                image={<Img fixed={data.post1.childImageSharp.fixed} />}
+                title={"Artigo em andamento"}
                 />
             </div> 
         </div>
