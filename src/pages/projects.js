@@ -23,6 +23,20 @@ query {
                 ...GatsbyImageSharpFixed
             }
         }
+    },
+    pipefy: file(relativePath: { eq: "pipefy.png" }) {
+        childImageSharp {
+            fixed(width: 128, height: 128) {
+                ...GatsbyImageSharpFixed
+            }
+        }
+    }
+    blog: file(relativePath: { eq: "blog.png" }) {
+        childImageSharp {
+            fixed(width: 128, height: 128) {
+                ...GatsbyImageSharpFixed
+            }
+        }
     }
 }
     
@@ -47,6 +61,15 @@ const Projects = ({ data }) => (
     </p>
         <div className="columns">
             <div className="column is-half is-offset-one-quarter ">
+                <a href="https://github.com/Seveshy/danielmajor-gatsby" target="_blank">
+                    <Card
+                    title={"Blog pessoal"}
+                    subtitle={"Projeto desenvolvido para apresentar meu portfolio, ideias, e tecnologias que estou estudando"}
+                    tags={["gatsby", "bulma"]}
+                    image={<Img fixed={data.blog.childImageSharp.fixed} />}
+                    />
+                </a>
+
                 <a href="https://github.com/Seveshy/gitcompare" target="_blank">
                     <Card
                     title={"Gitcompare"}
@@ -64,7 +87,15 @@ const Projects = ({ data }) => (
                     image={<Img fixed={data.twitter.childImageSharp.fixed} />}
                     />
                 </a>
-              
+
+                <a href="https://github.com/Seveshy/pipefy" target="_blank">
+                    <Card
+                    title={"Pipefy Clone"}
+                    subtitle={"Clone do layout do Pipefy + funcionalidade de scrum"}
+                    tags={["create-react-app", "styled-components", "react-icons"]}
+                    image={<Img fixed={data.pipefy.childImageSharp.fixed} />}
+                    />
+                </a>
             
             </div> 
         </div>
