@@ -1,6 +1,6 @@
 # My Blog With Gatsby
 
-Desenvolvi esse blog com intuito de expor meu portfolio, projetos, e falar sobre novas tecnôligias que estou estudando e aprendendo..
+Desenvolvi esse blog com intuito de apresentar meu portfolio, projetos, e falar sobre novas tecnologias que estou estudando e aprendendo.
 
 # Used libraries
 
