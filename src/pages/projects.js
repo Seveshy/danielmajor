@@ -95,8 +95,7 @@ const Projects = ({ data }) => (
                     tags={["create-react-app", "styled-components", "react-icons"]}
                     image={<Img fixed={data.pipefy.childImageSharp.fixed} />}
                     />
-                </a>
-            
+                </a>            
             </div> 
         </div>
         <p className="has-text-centered">
