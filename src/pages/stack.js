@@ -11,7 +11,7 @@ const Stack = () => (
     keywords="React, Sass, Frontend, developer"
 />
 
-<Helmet>
+<Helmet title="Stack">
   <script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
 </Helmet>
 

@@ -25,7 +25,7 @@ const Stack = ({ data }) => (
     keywords="React, Sass, Frontend, developer"
 />
 
-<Helmet>
+<Helmet title="Castanha">
   <script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
 </Helmet>
 
@@ -39,17 +39,18 @@ const Stack = ({ data }) => (
         <hr />
           <div className="has-text-centered">
           <p className="content">
-            Professor da matéria de
+          Pesquisa Operacional e Otimização
           </p>
-          <p className="content"> Pesquisa Operacional e Otimização. </p>
             <div className="columns is-centered"> 
               <div className="column is-full">
-              <h1 className="title has-text-centered has-text-light">Aula - 01</h1>
-              <iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/E0dVyQRS#jS5sz4sDMib50YuQF2KzroMT_rKMCQG1BgE6H0XjkTw" allowfullscreen ></iframe>
-
-              <h1 className="title has-text-centered has-text-light">Aula - 02</h1>
-              <iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/RkUzjaIY#suFzTNkE4IRe5A2cKf9kmR2m-XifIs2WihSkU1W0Qdo" allowfullscreen ></iframe>
-              
+              <h1 className="title has-text-centered has-text-light mt-10" href="_blank" >Aula 01 - Revisão</h1>
+              <iframe width="740" height="460" frameborder="0" src="https://mega.nz/embed/E0dVyQRS#jS5sz4sDMib50YuQF2KzroMT_rKMCQG1BgE6H0XjkTw" allowfullscreen ></iframe>
+              <a href="https://mega.nz/file/RkUzjaIY#suFzTNkE4IRe5A2cKf9kmR2m-XifIs2WihSkU1W0Qdo" 
+                className="has-text-light columns is-centered" target="_blank">Download</a>
+              <h1 className="title has-text-centered has-text-light mt-10">Aula 02 - Resolução de problemas atraves do método grafico</h1>
+              <iframe width="740" height="460" frameborder="0" src="https://mega.nz/embed/RkUzjaIY#suFzTNkE4IRe5A2cKf9kmR2m-XifIs2WihSkU1W0Qdo" allowfullscreen ></iframe>
+              <a href="https://mega.nz/file/E0dVyQRS#jS5sz4sDMib50YuQF2KzroMT_rKMCQG1BgE6H0XjkTw" 
+                className="has-text-light columns is-centered" target="_blank">Download</a>
               </div>
             </div>
           </div>

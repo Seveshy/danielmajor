@@ -49,7 +49,7 @@ const Projects = ({ data }) => (
     description="Frontend developer"
     keywords="React, Sass, Frontend, developer"
 />
-<Helmet title="Projetos | Daniel Major" />
+<Helmet title="Projetos" />
 
 <section className="section is-size-4-desktop is-size-5-touch">
     <h1 className="title has-text-centered has-text-light">Projetos</h1>
