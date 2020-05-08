@@ -55,12 +55,33 @@ hr {
 .mt-10 {
     margin-top: 50px;
 }
+
+.mt-5 {
+    margin-top: 10px;
+}
  
  @font-face {
      font-family: 'Droid Sans Mono for Power line';
      src: url('../fonts/Droid Sans Mono for Powerline.otf')
      format('opentype');
  }
+
+.video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+
+iframe {
+    position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
  
 .photo {
     margin: 48px auto 24px;

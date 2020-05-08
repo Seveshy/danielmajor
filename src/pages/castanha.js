@@ -42,15 +42,19 @@ const Stack = ({ data }) => (
           Pesquisa Operacional e Otimização
           </p>
             <div className="columns is-centered"> 
-              <div className="column is-full">
+              <div className="column is-three-quarters">
               <h1 className="title has-text-centered has-text-light mt-10" href="_blank" >Aula 01 - Revisão</h1>
-              <iframe width="740" height="460" frameborder="0" src="https://mega.nz/embed/E0dVyQRS#jS5sz4sDMib50YuQF2KzroMT_rKMCQG1BgE6H0XjkTw" allowfullscreen ></iframe>
+                <div className="video">
+                  <iframe width="740" height="460" frameborder="0" src="https://mega.nz/embed/E0dVyQRS#jS5sz4sDMib50YuQF2KzroMT_rKMCQG1BgE6H0XjkTw" allowfullscreen ></iframe>
+                </div>
               <a href="https://mega.nz/file/RkUzjaIY#suFzTNkE4IRe5A2cKf9kmR2m-XifIs2WihSkU1W0Qdo" 
-                className="has-text-light columns is-centered" target="_blank">Download</a>
+                className="has-text-light columns is-centered mt-5" target="_blank">Download</a>
               <h1 className="title has-text-centered has-text-light mt-10">Aula 02 - Resolução de problemas atraves do método grafico</h1>
-              <iframe width="740" height="460" frameborder="0" src="https://mega.nz/embed/RkUzjaIY#suFzTNkE4IRe5A2cKf9kmR2m-XifIs2WihSkU1W0Qdo" allowfullscreen ></iframe>
+                <div className="video">
+                  <iframe width="740" height="460" frameborder="0" src="https://mega.nz/embed/RkUzjaIY#suFzTNkE4IRe5A2cKf9kmR2m-XifIs2WihSkU1W0Qdo" allowfullscreen ></iframe>
+                </div>
               <a href="https://mega.nz/file/E0dVyQRS#jS5sz4sDMib50YuQF2KzroMT_rKMCQG1BgE6H0XjkTw" 
-                className="has-text-light columns is-centered" target="_blank">Download</a>
+                className="has-text-light columns is-centered mt-5" target="_blank">Download</a>
               </div>
             </div>
           </div>
