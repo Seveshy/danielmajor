@@ -28,6 +28,11 @@ const IndexPage = ({ data }) => (
         </figure>
     </div>
 <Helmet title="Daniel Major" />
+    <script>
+    var _ms = _ms || [];
+    _ms.push(['_setProperty', '162097756285']);
+    </script>
+    <script src="https://cdn.metlycs.com/js/snippet/1.0.0/snippet.min.js"> </script>
     <h1 className="title has-text-centered has-text-light">Daniel Major</h1> 
     <h3 className="subtitle-job has-text-centered">Frontend Developer</h3> 
     <div className="has-text-centered">
