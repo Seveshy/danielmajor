@@ -9,7 +9,7 @@ import "../components/styles/index.scss";
 
 export const queryImage = graphql`
 query {
-    photo: file(relativePath: { eq: "daniel.png" }) {
+    photo: file(relativePath: { eq: "daniel.jpg" }) {
         childImageSharp {
             fixed(width: 128, height: 128) {
                 ...GatsbyImageSharpFixed
