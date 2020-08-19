@@ -60,10 +60,7 @@ class Header extends Component {
               className="navbar-item is-size-5 has-text-light has-background-black-ter"
               to="/stack">Stack
               </Link>
-              <Link 
-              className="navbar-item is-size-5 has-text-light has-background-black-ter"
-              to="/castanha">Castanha
-              </Link>
+
             </div>
           </div>
         </div>
