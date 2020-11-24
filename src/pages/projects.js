@@ -38,6 +38,13 @@ query {
             }
         }
     }
+    robo: file(relativePath: { eq: "robo.png" }) {
+        childImageSharp {
+            fixed(width: 128, height: 128) {
+                ...GatsbyImageSharpFixed
+            }
+        }
+    }
 }
     
 `;
@@ -61,6 +68,15 @@ const Projects = ({ data }) => (
     </p>
         <div className="columns">
             <div className="column is-half is-offset-one-quarter ">
+                <Link to="robo" target="_blank">
+                    <Card
+                    title={"Robo Instagram"}
+                    subtitle={"Projeto desenvolvido dentro da Universidade Ibirapuera"}
+                    tags={["gatsby", "bulma"]}
+                    image={<Img fixed={data.robo.childImageSharp.fixed} />}
+                    />
+                </Link>
+
                 <a href="https://github.com/Seveshy/danielmajor-gatsby" target="_blank">
                     <Card
                     title={"Blog pessoal"}
