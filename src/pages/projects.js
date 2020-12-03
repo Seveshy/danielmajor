@@ -68,6 +68,15 @@ const Projects = ({ data }) => (
     </p>
         <div className="columns">
             <div className="column is-half is-offset-one-quarter ">
+                <Link to="compiladores" target="_blank">
+                    <Card
+                    title={"Compiladores"}
+                    subtitle={"Resumo sobre compiladores UNIB"}
+                    tags={["gatsby", "bulma"]}
+                    image={<Img fixed={data.robo.childImageSharp.fixed} />}
+                    />
+                </Link>
+
                 <Link to="robo" target="_blank">
                     <Card
                     title={"Robo Instagram"}

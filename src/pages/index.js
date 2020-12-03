@@ -60,8 +60,9 @@ const IndexPage = ({ data }) => (
     <section className="section content is-size-4-desktop is-size-5-touch">
         <h4 className="title has-text-light">Olá, eu sou o Daniel</h4>
             <p>No momento estou no último semestre do curso de Ciências da Computação.</p>
-            <p> Estou a um ano e meio atuando com desenvolvimento web, com foco em frontend, e na maiorias das vezes com as melhores tecnologias do mercado, como Reactjs, Nodejs
-                e React Native. </p>
+            <p> Estou a dois anos atuando com desenvolvimento web, com foco em frontend, 
+                e na maiorias das vezes com as melhores tecnologias do mercado, como Nodejs, 
+                Laravel, Reactjs e React Native. </p>
             <p> Estou sempre aberto a novos desafios e solucionar problemas. </p>
         
         <p>

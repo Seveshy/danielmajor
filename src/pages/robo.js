@@ -2,7 +2,22 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-const RoboPage = () => (
+export const queryImage = graphql`
+query {
+   
+    robo: file(relativePath: { eq: "robo.png" }) {
+        childImageSharp {
+            fixed(width: 128, height: 128) {
+                ...GatsbyImageSharpFixed
+            }
+        }
+    }
+}
+    
+`;
+
+
+const RoboPage = ({ data }) => (
   <Layout>
       <section className="section">
         <h1 className="title has-text-centered has-text-light">Robo Instagram</h1>
