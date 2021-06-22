@@ -51,13 +51,7 @@ const Blog = ({ data }) => (
                 title={"Artigo em andamento"}
                 />
             </div> 
-        </div>
-        <p className="has-text-centered">
-        Check out my
-        {" "}
-            <Link to="/stack">Stack</Link>
-        </p>  
-       
+        </div> 
 </section>
 </Layout>
 );
